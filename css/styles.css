@@ -1,4 +1,22 @@
 /********** Template CSS **********/
+/* Spinner custom style */
+        #spinner.show {
+            display: flex;
+        }
+        #spinner {
+            display: none;
+            background: #fff;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 100vw;
+            height: 100vh;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+        }
+
 :root {
     --primary: #348E38;
     --secondary: #525368;
