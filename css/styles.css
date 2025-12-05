@@ -21,12 +21,8 @@ h4 {
     padding-left: 0;
 }
 .core-values ul li {
-    list-style: none;
-    position: relative;
-    padding-left: 25px;
-    margin-bottom: 1rem;
+    font-size: 1rem;
     color: var(--dark);
-    font-weight: 500;
 }
 .core-values ul li::before {
     content: "✔";
