@@ -216,3 +216,106 @@ h4 {
 .hero-section .btn:hover {
     transform: translateY(-3px) scale(1.05);
 }
+
+/********** FAQ Section **********/
+#faqs {
+    padding: 5rem 0;
+    background-color: var(--light);
+    font-family: 'Lato', sans-serif;
+    color: var(--dark);
+}
+
+#faqs h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Jost', sans-serif;
+    color: var(--primary);
+}
+
+/* FAQ Search Bar */
+.faq-search {
+    max-width: 500px;
+    margin: 0 auto 2rem auto;
+    padding-left: 3rem; /* for search icon */
+    border: 2px solid var(--primary);
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(46, 125, 50, 0.2);
+    transition: all 0.3s ease;
+}
+
+.faq-search:focus {
+    outline: none;
+    box-shadow: 0 4px 15px rgba(46, 125, 50, 0.4);
+    border-color: var(--dark);
+}
+
+.faq-search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary);
+    pointer-events: none;
+    font-size: 1.2rem;
+}
+
+/* FAQ Items */
+.faq-item {
+    margin-bottom: 1rem;
+    border: 1px solid var(--secondary);
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.faq-item-header {
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Jost', sans-serif;
+    position: relative;
+    background-color: var(--light);
+    transition: background 0.3s ease;
+}
+
+.faq-item-header::after {
+    content: "\f107"; /* Font Awesome down arrow */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+    color: var(--primary);
+}
+
+.faq-item-header.active::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.faq-item-body {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 1.5rem;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--dark);
+}
+
+.faq-item-body.open {
+    padding: 1rem 1.5rem;
+}
+
+/* Hover and Focus */
+.faq-item:hover {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.faq-item-header:hover {
+    background-color: var(--secondary);
+    color: #fff;
+}
