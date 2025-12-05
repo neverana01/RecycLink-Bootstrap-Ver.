@@ -60,6 +60,11 @@
     width: 40%;
 }
 
+.logo-img {
+    height: 100px; /* Adjust this value as needed */
+    width: auto; /* Maintains the image's original proportions */
+}
+
 /********** General Enhancements **********/
 h4 { 
     text-align: center; 
@@ -230,14 +235,19 @@ footer p {
 
 /********** Back to Top **********/
 .back-to-top {
-    background-color: var(--primary) !important;
-    color: var(--light) !important;
-    border: 2px solid var(--secondary);
+    position: fixed !important;
+    bottom: 40px;      /* move it down more */
+    left: 25px;        /* left side */
+    z-index: 9999;
+    transform: translateY(50%)
+    
 }
 .back-to-top:hover {
     background-color: var(--secondary) !important;
     color: #fff !important;
     border-color: var(--primary);
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.4);
+     transform: scale(1.08);
 }
 
 /********** FAQ Section **********/
