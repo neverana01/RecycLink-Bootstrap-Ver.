@@ -319,3 +319,23 @@ h4 {
     background-color: var(--secondary);
     color: #fff;
 }
+
+/* Accordion Headers */
+
+.accordion-button {
+    transition: all 0.3s ease;
+}
+.accordion-button:hover {
+    background-color: rgba(46,125,50,0.1);
+}
+.accordion-button:not(.collapsed) {
+    background-color: rgba(46,125,50,0.15);
+    color: #1B5E20;
+}
+#faqSearch:focus {
+    border-color: #2E7D32;
+    box-shadow: 0 0 8px rgba(46,125,50,0.3);
+}
+.accordion-body {
+    transition: all 0.3s ease;
+}
