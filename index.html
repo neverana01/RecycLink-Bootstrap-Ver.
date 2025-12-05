@@ -25,7 +25,7 @@
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/styles.css">
@@ -61,86 +61,81 @@
     </div>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <!-- Logo Placeholder -->
             <img src="img/logo-placeholder.png" alt="RecycLink Logo" class="logo-img" data-placeholder="LOGO IMAGE HERE">
             <h1 class="m-0">RecycLink</h1>
         </a>
         <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Home</a>
                 <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#features" class="nav-item nav-link">How It Works</a>
+                <a href="#feature-highlights" class="nav-item nav-link">Features</a>
+                <a href="#how-it-works" class="nav-item nav-link">How It Works</a>
                 <a href="#for-recyclers" class="nav-item nav-link">For Recyclers</a>
                 <a href="#faqs" class="nav-item nav-link">FAQs</a>
                 <a href="#contact" class="nav-item nav-link">Contact</a>
                 <a href="#download" class="nav-item nav-link">Download</a>
             </div>
-            <a href="#download" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Download App<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="#download" class="btn btn-primary py-3 px-lg-4 rounded-0 d-none d-lg-block">Download App<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
 
     <!-- Home / Hero Section -->
-    <section class="container-fluid p-0 bg-primary text-white hero-section" data-placeholder="HERO BACKGROUND IMAGE">
-        <div class="container text-center py-5">
-            <h1 class="display-1 mb-3">RecycLink</h1>
+    <section class="container-fluid p-0 hero-section bg-primary text-white text-center position-relative">
+        <div class="container py-5">
+            <h1 class="display-1 fw-bold mb-3">RecycLink</h1>
             <p class="fs-4 mb-4">Make recycling rewarding—literally.<br>Effortlessly turn your trash into cash and Eco-Rewards.</p>
             <div class="d-flex justify-content-center gap-3">
-                <a href="#download" class="btn btn-light btn-lg">Download the App</a>
-                <a href="#for-recyclers" class="btn btn-outline-light btn-lg">Join as Recycler</a>
+                <a href="#download" class="btn btn-light btn-lg shadow">Download the App</a>
+                <a href="#for-recyclers" class="btn btn-outline-light btn-lg shadow">Join as Recycler</a>
             </div>
             <div class="mt-5">
-                <!-- Hero Animation Placeholder -->
-                <img class="img-fluid" src="img/home-animation.gif" alt="Recycle to Cash Animation" data-placeholder="HERO IMAGE OR ANIMATION">
+                <img class="img-fluid rounded shadow-lg" src="img/home-animation.gif" alt="Recycle to Cash Animation">
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-<section id="about" class="container-xxl py-5">
-    <div class="container">
-        <div class="text-center mx-auto mb-5" style="max-width:700px;">
-            <h2 class="display-5 text-primary">About RecycLink</h2>
-            <p>FILL IN</p>
-        </div>
+    <section id="about" class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width:700px;">
+                <h2 class="display-5 text-primary">About RecycLink</h2>
+                <p>FILL IN</p>
+            </div>
 
-        <!-- Mission & Vision Side-by-Side -->
-        <div class="row g-4 mb-4">
-            <div class="col-md-6">
-                <div class="p-4 border rounded shadow-sm h-100 text-center">
-                    <h4 class="mb-3">Mission</h4>
-                    <p>FILL IN</p>
+            <div class="row g-4 mb-4">
+                <div class="col-md-6">
+                    <div class="p-4 border rounded shadow-sm h-100 text-center">
+                        <h4 class="mb-3">Mission</h4>
+                        <p>FILL IN</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4 border rounded shadow-sm h-100 text-center">
+                        <h4 class="mb-3">Vision</h4>
+                        <p>FILL IN</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="p-4 border rounded shadow-sm h-100 text-center">
-                    <h4 class="mb-3">Vision</h4>
-                    <p>FILL IN</p>
+
+            <div class="core-values mb-5">
+                <div class="p-4 border rounded shadow-sm text-center">
+                    <h4 class="mb-3">Core Values</h4>
+                    <ul class="list-unstyled m-0">
+                        <li class="mb-2">Sustainability – Advocating environmental care through responsible recycling.</li>
+                        <li class="mb-2">Transparency – Ensuring fair pricing and honest transactions across our platform.</li>
+                        <li class="mb-2">Innovation – Using technology to simplify and improve the recycling process.</li>
+                        <li class="mb-2">Community – Connecting households, junk shops, and recyclers for a shared cause.</li>
+                        <li>Integrity – Operating with trust, safety, and accountability in every interaction.</li>
+                    </ul>
                 </div>
             </div>
-        </div>
 
-        <!-- Core Values Centered in Own Box -->
-        <div class="core-values mb-5">
-            <div class="p-4 border rounded shadow-sm text-center">
-                <h4 class="mb-3">Core Values</h4>
-
-                <!-- No bullets and centered -->
-                <ul class="list-unstyled m-0">
-                    <li class="mb-2">Sustainability – Advocating environmental care through responsible recycling.</li>
-                    <li class="mb-2">Transparency – Ensuring fair pricing and honest transactions across our platform.</li>
-                    <li class="mb-2">Innovation – Using technology to simplify and improve the recycling process.</li>
-                    <li class="mb-2">Community – Connecting households, junk shops, and recyclers for a shared cause.</li>
-                    <li>Integrity – Operating with trust, safety, and accountability in every interaction.</li>
-                </ul>
-            </div>
-        </div>
-
-            <!-- Stats -->
             <div class="row g-4 text-center">
                 <div class="col-md-3">
                     <h3>10,000+ kg</h3>
@@ -162,31 +157,79 @@
         </div>
     </section>
 
-    <!-- Features / How It Works -->
-    <section id="features" class="container-xxl py-5 bg-light" data-placeholder="FEATURES IMAGES">
+    <!-- Feature Highlights -->
+    <section id="feature-highlights" class="container-xxl py-5 bg-light">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="display-5 text-primary">Features & How It Works</h2>
-                <p>RecycLink simplifies recycling in 3 easy steps: List Your Waste, Get Matched, Earn & Recycle.</p>
+                <h2 class="display-5 text-primary">Feature Highlights</h2>
+                <p>Explore the core features that make RecycLink a smart, sustainable, and rewarding platform.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-4 border rounded shadow-sm h-100 text-center hover-scale">
+                        <h4 class="mb-3">Smart Matching System</h4>
+                        <p>Automatically pairs sellers and buyers based on location and type of waste.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 border rounded shadow-sm h-100 text-center hover-scale">
+                        <h4 class="mb-3">Transparent Pricing</h4>
+                        <p>Shows current buying rates per material.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 border rounded shadow-sm h-100 text-center hover-scale">
+                        <h4 class="mb-3">Pickup Scheduling</h4>
+                        <p>Arrange pickups with verified recyclers.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 border rounded shadow-sm h-100 text-center hover-scale">
+                        <h4 class="mb-3">Eco-Rewards</h4>
+                        <p>Earn points redeemable for vouchers or donations.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 border rounded shadow-sm h-100 text-center hover-scale">
+                        <h4 class="mb-3">AI Sorting Assistant</h4>
+                        <p>Helps users categorize waste types via image recognition.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 border rounded shadow-sm h-100 text-center hover-scale">
+                        <h4 class="mb-3">Carbon Footprint Tracker</h4>
+                        <p>Shows how much waste users have diverted from landfills.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 text-primary">How It Works</h2>
+                <p>RecycLink simplifies the recycling process into three intuitive steps.</p>
             </div>
             <div class="row g-4 text-center">
                 <div class="col-md-4">
-                    <div class="p-4 border rounded shadow-sm">
-                        <i class="fa fa-list fa-3x text-primary mb-3" data-placeholder="FEATURE ICON OR IMAGE"></i>
+                    <div class="p-4 border rounded shadow-sm h-100 hover-scale">
+                        <i class="fa fa-list fa-3x text-primary mb-3"></i>
                         <h4>List Your Waste</h4>
-                        <p>Input the recyclable materials you have (plastic, paper, metal, etc.).</p>
+                        <p>Input the recyclable materials you have (plastic bottles, paper, metal, etc.).</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="p-4 border rounded shadow-sm">
-                        <i class="fa fa-link fa-3x text-primary mb-3" data-placeholder="FEATURE ICON OR IMAGE"></i>
+                    <div class="p-4 border rounded shadow-sm h-100 hover-scale">
+                        <i class="fa fa-link fa-3x text-primary mb-3"></i>
                         <h4>Get Matched</h4>
-                        <p>The app connects you with nearby recyclers or junk shops.</p>
+                        <p>The app automatically connects you with nearby recyclers or junk shops that buy those materials.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="p-4 border rounded shadow-sm">
-                        <i class="fa fa-coins fa-3x text-primary mb-3" data-placeholder="FEATURE ICON OR IMAGE"></i>
+                    <div class="p-4 border rounded shadow-sm h-100 hover-scale">
+                        <i class="fa fa-coins fa-3x text-primary mb-3"></i>
                         <h4>Earn & Recycle</h4>
                         <p>Schedule pickup or drop-off, and get paid or earn eco-points.</p>
                     </div>
@@ -196,66 +239,58 @@
     </section>
 
     <!-- For Recyclers -->
-<section id="for-recyclers" class="container-xxl py-5" data-placeholder="RECYCLERS IMAGE OR BACKGROUND">
-    <div class="container text-center">
-        <h2 class="display-5 text-primary mb-4">For Recyclers</h2>
-        <p>RecycLink helps recyclers find quality materials faster, operate efficiently, and contribute to a cleaner economy.</p>
-        <a href="#contact" class="btn btn-primary mt-3 mb-4">Register as Recycler / Buyer</a>
-        <!-- List in aligned small boxes -->
-        <div class="row g-3 justify-content-center mt-4">
-            <div class="col-md-4 col-sm-6">
-                <div class="p-3 border rounded shadow-sm h-100">
-                    Dashboard for inventory & route optimization
+    <section id="for-recyclers" class="container-xxl py-5 text-center" data-placeholder="RECYCLERS IMAGE OR BACKGROUND">
+        <div class="container">
+            <h2 class="display-5 text-primary mb-4">For Recyclers</h2>
+            <p>RecycLink helps recyclers find quality materials faster, operate efficiently, and contribute to a cleaner economy.</p>
+            <a href="#contact" class="btn btn-primary mt-3 mb-4">Register as Recycler / Buyer</a>
+            <div class="row g-3 justify-content-center mt-4">
+                <div class="col-md-4 col-sm-6">
+                    <div class="p-3 border rounded shadow-sm h-100 hover-scale">Dashboard for inventory & route optimization</div>
                 </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="p-3 border rounded shadow-sm h-100">
-                    ✅ Verified seller connections
+                <div class="col-md-4 col-sm-6">
+                    <div class="p-3 border rounded shadow-sm h-100 hover-scale">✅ Verified seller connections</div>
                 </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="p-3 border rounded shadow-sm h-100">
-                    ✅ Real-time market analytics
+                <div class="col-md-4 col-sm-6">
+                    <div class="p-3 border rounded shadow-sm h-100 hover-scale">✅ Real-time market analytics</div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Team Section -->
-    <section id="team" class="container-xxl py-5" data-placeholder="TEAM PROFILE IMAGES">
+    <section id="team" class="container-xxl py-5 text-center">
         <div class="container">
-            <h3 class="text-center mb-4">Meet Our Team</h3>
-            <p class="text-center section-subtitle mb-5">The people driving RecycLink’s mission</p>
-
-            <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center team-container text-center">
-                <div class="col team-member">
-                    <img src="https://via.placeholder.com/150" alt="Neve Raña" data-placeholder="TEAM IMAGE">
+            <h3 class="mb-4">Meet Our Team</h3>
+            <p class="section-subtitle mb-5">The people driving RecycLink’s mission</p>
+            <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center team-container">
+                <div class="col team-member hover-scale">
+                    <img src="https://via.placeholder.com/150" alt="Neve Raña" class="rounded-circle mb-3">
                     <h5>Neve Raña</h5>
                     <p>Project Manager, Content Specialist</p>
                 </div>
-                <div class="col team-member">
-                    <img src="https://via.placeholder.com/150" alt="Zuriel Villanueva" data-placeholder="TEAM IMAGE">
+                <div class="col team-member hover-scale">
+                    <img src="https://via.placeholder.com/150" alt="Zuriel Villanueva" class="rounded-circle mb-3">
                     <h5>Zuriel Villanueva</h5>
                     <p>Front-end Developer, UI/UX Developer</p>
                 </div>
-                <div class="col team-member">
-                    <img src="https://via.placeholder.com/150" alt="Elvin Gatbonton" data-placeholder="TEAM IMAGE">
+                <div class="col team-member hover-scale">
+                    <img src="https://via.placeholder.com/150" alt="Elvin Gatbonton" class="rounded-circle mb-3">
                     <h5>Elvin Gatbonton</h5>
                     <p>Front-end Developer, UI/UX Developer</p>
                 </div>
-                <div class="col team-member">
-                    <img src="https://via.placeholder.com/150" alt="Julianne Lansangan" data-placeholder="TEAM IMAGE">
+                <div class="col team-member hover-scale">
+                    <img src="https://via.placeholder.com/150" alt="Julianne Lansangan" class="rounded-circle mb-3">
                     <h5>Julianne Lansangan</h5>
                     <p>Graphic Designer, Content Specialist</p>
                 </div>
-                <div class="col team-member">
-                    <img src="https://via.placeholder.com/150" alt="Lebron Duculan" data-placeholder="TEAM IMAGE">
+                <div class="col team-member hover-scale">
+                    <img src="https://via.placeholder.com/150" alt="Lebron Duculan" class="rounded-circle mb-3">
                     <h5>Lebron Duculan</h5>
                     <p>Content Specialist</p>
                 </div>
-                <div class="col team-member">
-                    <img src="https://via.placeholder.com/150" alt="Rovic Dato" data-placeholder="TEAM IMAGE">
+                <div class="col team-member hover-scale">
+                    <img src="https://via.placeholder.com/150" alt="Rovic Dato" class="rounded-circle mb-3">
                     <h5>Rovic Dato</h5>
                     <p>Front-end Developer, UI/UX Developer</p>
                 </div>
@@ -278,5 +313,17 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- Premium navbar scroll effect -->
+    <script>
+    document.addEventListener("scroll", function () {
+        const nav = document.querySelector(".navbar");
+        if (window.scrollY > 30) {
+            nav.classList.add("scrolled", "shadow-lg");
+        } else {
+            nav.classList.remove("scrolled", "shadow-lg");
+        }
+    });
+    </script>
 </body>
 </html>
