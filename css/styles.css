@@ -61,9 +61,12 @@
 }
 
 .logo-img {
-    height: 100px; /* Adjust this value as needed */
-    width: auto; /* Maintains the image's original proportions */
+    height: 100px !important;
+    width: auto !important;
+    max-width: none !important; 
+    flex-shrink: 0 !important;  
 }
+
 
 /********** General Enhancements **********/
 h4 { 
@@ -175,8 +178,8 @@ h4 {
 
 /********** Hero Section **********/
 .hero-section {
-    background: linear-gradient(rgba(46,125,50,0.85), rgba(46,125,50,0.85)), url('../img/hero.png') center/cover no-repeat;
-    padding: 5rem 0;
+    background: url('../img/hero.png') center/cover no-repeat;
+    padding: 8rem 0 !important;
 }
 .hero-section h1, .hero-section p {
     text-align: center;
@@ -284,6 +287,8 @@ footer p {
     box-shadow: 0 8px 20px rgba(46,125,50,0.3);
 }
 
+
+
 /* Override Bootstrap blue */
 .text-primary,
 .btn-primary,
@@ -293,5 +298,6 @@ footer p {
 i.text-primary {
     color: var(--primary) !important;
     fill: var(--primary) !important;
+    border-color: var(--primary) !important; 
 }
 
