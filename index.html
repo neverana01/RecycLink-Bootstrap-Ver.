@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+enhance and fix without change so it matches css 
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -8,10 +9,12 @@
     <meta name="description" content="RecycLink is a digital platform that connects households and businesses to verified recyclers, turning waste into cash and Eco-Rewards.">
 
     <!-- Favicon -->
-    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" href="img/favicon.ico" data-placeholder="LOGO IMAGE HERE">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
 
     <!-- Icon Fonts -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -56,7 +59,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <img src="img/logo-placeholder.png" alt="RecycLink Logo" class="logo-img">
+            <img src="img/logo-placeholder.png" alt="RecycLink Logo" class="logo-img" data-placeholder="LOGO IMAGE HERE">
             <h3 class="m-0 text-success">RecycLink</h3>
         </a>
         <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -73,12 +76,12 @@
                 <a href="#faqs" class="nav-item nav-link">FAQs</a>
                 <a href="#download" class="nav-item nav-link">Download</a>
             </div>
-            <a href="#download" class="btn btn-primary py-3 px-lg-4 rounded-0 d-none d-lg-block">Download App<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="#download" class="btn btn-success py-3 px-lg-4 rounded-0 d-none d-lg-block">Download App<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="container-fluid p-0 hero-section text-white text-center position-relative">
+    <section class="container-fluid p-0 hero-section text-white text-center position-relative" style="background: linear-gradient(rgba(46,125,50,0.8), rgba(46,125,50,0.8)), url('img/home-animation.gif') center/cover no-repeat;">
         <div class="container py-5">
             <h1 class="display-1 fw-bold mb-3">RecycLink</h1>
             <p class="fs-4 mb-4">Make recycling rewarding—literally.<br>Turn your trash into cash and Eco-Rewards.</p>
@@ -96,7 +99,7 @@
     <section id="about" class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto mb-5" style="max-width:700px;">
-                <h2 class="display-5 text-primary">About RecycLink</h2>
+                <h2 class="display-5 text-success">About RecycLink</h2>
                 <p>RecycLink is a digital platform connecting households and businesses to verified recyclers, turning waste into cash and Eco-Rewards while promoting sustainability.</p>
             </div>
 
@@ -159,37 +162,37 @@
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="p-4 border rounded shadow-sm h-100 text-center hover-scale">
-                        <h4 class="mb-3 text-secondary">Smart Matching System</h4>
+                        <h4 class="mb-3">Smart Matching System</h4>
                         <p>Automatically pairs sellers and buyers based on location and type of waste.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="p-4 border rounded shadow-sm h-100 text-center hover-scale">
-                        <h4 class="mb-3 text-secondary">Transparent Pricing</h4>
+                        <h4 class="mb-3">Transparent Pricing</h4>
                         <p>Shows current buying rates per material.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="p-4 border rounded shadow-sm h-100 text-center hover-scale">
-                        <h4 class="mb-3 text-secondary">Pickup Scheduling</h4>
+                        <h4 class="mb-3">Pickup Scheduling</h4>
                         <p>Arrange pickups with verified recyclers.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="p-4 border rounded shadow-sm h-100 text-center hover-scale">
-                        <h4 class="mb-3 text-secondary">Eco-Rewards</h4>
+                        <h4 class="mb-3">Eco-Rewards</h4>
                         <p>Earn points redeemable for vouchers or donations.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="p-4 border rounded shadow-sm h-100 text-center hover-scale">
-                        <h4 class="mb-3 text-secondary">AI Sorting Assistant</h4>
+                        <h4 class="mb-3">AI Sorting Assistant</h4>
                         <p>Helps users categorize waste types via image recognition.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="p-4 border rounded shadow-sm h-100 text-center hover-scale">
-                        <h4 class="mb-3 text-secondary">Carbon Footprint Tracker</h4>
+                        <h4 class="mb-3">Carbon Footprint Tracker</h4>
                         <p>Shows how much waste users have diverted from landfills.</p>
                     </div>
                 </div>
@@ -207,22 +210,22 @@
             <div class="row g-4 text-center">
                 <div class="col-md-4">
                     <div class="p-4 border rounded shadow-sm h-100 hover-scale">
-                        <i class="fa fa-list fa-3x text-secondary mb-3"></i>
-                        <h4 class="text-secondary">List Your Waste</h4>
+                        <i class="fa fa-list fa-3x text-primary mb-3"></i>
+                        <h4>List Your Waste</h4>
                         <p>Input the recyclable materials you have (plastic bottles, paper, metal, etc.).</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="p-4 border rounded shadow-sm h-100 hover-scale">
-                        <i class="fa fa-link fa-3x text-secondary mb-3"></i>
-                        <h4 class="text-secondary">Get Matched</h4>
+                        <i class="fa fa-link fa-3x text-primary mb-3"></i>
+                        <h4>Get Matched</h4>
                         <p>The app automatically connects you with nearby recyclers or junk shops that buy those materials.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="p-4 border rounded shadow-sm h-100 hover-scale">
-                        <i class="fa fa-coins fa-3x text-secondary mb-3"></i>
-                        <h4 class="text-secondary">Earn & Recycle</h4>
+                        <i class="fa fa-coins fa-3x text-primary mb-3"></i>
+                        <h4>Earn & Recycle</h4>
                         <p>Schedule pickup or drop-off, and get paid or earn eco-points.</p>
                     </div>
                 </div>
@@ -231,51 +234,219 @@
     </section>
 
     <!-- For Recyclers -->
-    <section id="for-recyclers" class="container-xxl py-5 text-center">
+    <section id="for-recyclers" class="container-xxl py-5 text-center" data-placeholder="RECYCLERS IMAGE OR BACKGROUND">
         <div class="container">
             <h2 class="display-5 text-primary mb-4">For Recyclers</h2>
             <p>RecycLink helps recyclers find quality materials faster, operate efficiently, and contribute to a cleaner economy.</p>
             <a href="#contact" class="btn btn-primary mt-3 mb-4">Register as Recycler / Buyer</a>
             <div class="row g-3 justify-content-center mt-4">
                 <div class="col-md-4 col-sm-6">
-                    <div class="p-3 border rounded shadow-sm h-100 hover-scale text-secondary">Dashboard for inventory & route optimization</div>
+                    <div class="p-3 border rounded shadow-sm h-100 hover-scale">Dashboard for inventory & route optimization</div>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <div class="p-3 border rounded shadow-sm h-100 hover-scale text-secondary">✅ Verified seller connections</div>
+                    <div class="p-3 border rounded shadow-sm h-100 hover-scale">✅ Verified seller connections</div>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <div class="p-3 border rounded shadow-sm h-100 hover-scale text-secondary">✅ Real-time market analytics</div>
+                    <div class="p-3 border rounded shadow-sm h-100 hover-scale">✅ Real-time market analytics</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQs Section -->
-    <section id="faqs" class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 text-primary">Frequently Asked Questions</h2>
-                <p>Everything you need to know about RecycLink, for both households and recyclers.</p>
-            </div>
-
-            <!-- FAQ content remains unchanged, with headings using text-success / text-primary as needed -->
+<!-- FAQs Section -->
+<section id="faqs" class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 text-success">Frequently Asked Questions</h2>
+            <p>Everything you need to know about RecycLink, for both households and recyclers.</p>
         </div>
-    </section>
+        
+        <!-- FAQ Search Bar -->
+        <div class="mb-4">
+            <input type="text" id="faqSearch" class="form-control form-control-lg border-success shadow-sm" placeholder="Search FAQs...">
+        </div>
+
+        <!-- For Households / App Users -->
+        <div class="mb-4">
+            <h4 class="mb-3 text-success">For Households / App Users</h4>
+            <div class="accordion" id="householdFaqs">
+                <div class="accordion-item border-success rounded mb-2 shadow-sm">
+                    <h2 class="accordion-header" id="q1">
+                        <button class="accordion-button collapsed text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="a1">
+                            Q1: How do I start using RecycLink?
+                        </button>
+                    </h2>
+                    <div id="a1" class="accordion-collapse collapse" aria-labelledby="q1" data-bs-parent="#householdFaqs">
+                        <div class="accordion-body text-dark">
+                            Download the app, create an account, and list your recyclable items. The system will match you with verified buyers nearby.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-success rounded mb-2 shadow-sm">
+                    <h2 class="accordion-header" id="q2">
+                        <button class="accordion-button collapsed text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="a2">
+                            Q2: What kind of materials can I sell?
+                        </button>
+                    </h2>
+                    <div id="a2" class="accordion-collapse collapse" aria-labelledby="q2" data-bs-parent="#householdFaqs">
+                        <div class="accordion-body text-dark">
+                            Plastics, paper, metals, glass, used electronics, and more. The app automatically categorizes them for you.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-success rounded mb-2 shadow-sm">
+                    <h2 class="accordion-header" id="q3">
+                        <button class="accordion-button collapsed text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="a3">
+                            Q3: How do I get paid?
+                        </button>
+                    </h2>
+                    <div id="a3" class="accordion-collapse collapse" aria-labelledby="q3" data-bs-parent="#householdFaqs">
+                        <div class="accordion-body text-dark">
+                            You can receive payment through GCash, Maya, or bank transfer—or earn EcoPoints redeemable for vouchers and rewards.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- For Recyclers / Junk Shops -->
+        <div class="mb-4">
+            <h4 class="mb-3 text-success">For Recyclers / Junk Shops</h4>
+            <div class="accordion" id="recyclerFaqs">
+                <div class="accordion-item border-success rounded mb-2 shadow-sm">
+                    <h2 class="accordion-header" id="q4">
+                        <button class="accordion-button collapsed text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="a4">
+                            Q4: How can I register as a recycler or buyer?
+                        </button>
+                    </h2>
+                    <div id="a4" class="accordion-collapse collapse" aria-labelledby="q4" data-bs-parent="#recyclerFaqs">
+                        <div class="accordion-body text-dark">
+                            Go to “Join as Recycler” on the website or app, submit your business details, and get verified by our team.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-success rounded mb-2 shadow-sm">
+                    <h2 class="accordion-header" id="q5">
+                        <button class="accordion-button collapsed text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="a5">
+                            Q5: How does pricing work?
+                        </button>
+                    </h2>
+                    <div id="a5" class="accordion-collapse collapse" aria-labelledby="q5" data-bs-parent="#recyclerFaqs">
+                        <div class="accordion-body text-dark">
+                            Buyers set their own rates, visible to all users. A recommended “market average” guide helps ensure fair trade.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trust & Safety -->
+        <div class="mb-4">
+            <h4 class="mb-3 text-success">Trust & Safety</h4>
+            <div class="accordion" id="trustFaqs">
+                <div class="accordion-item border-success rounded mb-2 shadow-sm">
+                    <h2 class="accordion-header" id="q6">
+                        <button class="accordion-button collapsed text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="a6">
+                            Q6: Are the recyclers verified? How do you prevent scams?
+                        </button>
+                    </h2>
+                    <div id="a6" class="accordion-collapse collapse" aria-labelledby="q6" data-bs-parent="#trustFaqs">
+                        <div class="accordion-body text-dark">
+                            Yes. We require valid IDs or business licenses for verification. Verified profiles display Trust Badges for assurance.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-success rounded mb-2 shadow-sm">
+                    <h2 class="accordion-header" id="q7">
+                        <button class="accordion-button collapsed text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="a7">
+                            Q7: How is my personal data protected?
+                        </button>
+                    </h2>
+                    <div id="a7" class="accordion-collapse collapse" aria-labelledby="q7" data-bs-parent="#trustFaqs">
+                        <div class="accordion-body text-dark">
+                            We strictly comply with data privacy laws and use data anonymization to safeguard all user information.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Solutions & Support -->
+        <div class="mb-4">
+            <h4 class="mb-3 text-success">Solutions and Support</h4>
+            <div class="accordion" id="supportFaqs">
+                <div class="accordion-item border-success rounded mb-2 shadow-sm">
+                    <h2 class="accordion-header" id="q8">
+                        <button class="accordion-button collapsed text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#a8" aria-expanded="false" aria-controls="a8">
+                            Q8: What should I do if I encounter a problem?
+                        </button>
+                    </h2>
+                    <div id="a8" class="accordion-collapse collapse" aria-labelledby="q8" data-bs-parent="#supportFaqs">
+                        <div class="accordion-body text-dark">
+                            Contact our support team directly through the app or email support@recyclink.app for quick assistance.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-success rounded mb-2 shadow-sm">
+                    <h2 class="accordion-header" id="q9">
+                        <button class="accordion-button collapsed text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#a9" aria-expanded="false" aria-controls="a9">
+                            Q9: How are pickup issues and delays managed?
+                        </button>
+                    </h2>
+                    <div id="a9" class="accordion-collapse collapse" aria-labelledby="q9" data-bs-parent="#supportFaqs">
+                        <div class="accordion-body text-dark">
+                            Route tracking, notifications, and verified logistics partners ensure reliable scheduling and quick issue resolution.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Team Section -->
     <section id="team" class="container-xxl py-5 text-center">
         <div class="container">
-            <h3 class="mb-4 text-primary">Meet Our Team</h3>
-            <p class="section-subtitle mb-5 text-secondary">The people driving RecycLink’s mission</p>
+            <h3 class="mb-4">Meet Our Team</h3>
+            <p class="section-subtitle mb-5">The people driving RecycLink’s mission</p>
             <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center team-container">
-                <!-- Team members unchanged -->
+                <div class="col team-member hover-scale">
+                    <img src="https://via.placeholder.com/150" alt="Neve Raña" class="rounded-circle mb-3">
+                    <h5>Neve Raña</h5>
+                    <p>Project Manager, Content Specialist</p>
+                </div>
+                <div class="col team-member hover-scale">
+                    <img src="https://via.placeholder.com/150" alt="Zuriel Villanueva" class="rounded-circle mb-3">
+                    <h5>Zuriel Villanueva</h5>
+                    <p>Front-end Developer, UI/UX Developer</p>
+                </div>
+                <div class="col team-member hover-scale">
+                    <img src="https://via.placeholder.com/150" alt="Elvin Gatbonton" class="rounded-circle mb-3">
+                    <h5>Elvin Gatbonton</h5>
+                    <p>Front-end Developer, UI/UX Developer</p>
+                </div>
+                <div class="col team-member hover-scale">
+                    <img src="https://via.placeholder.com/150" alt="Julianne Lansangan" class="rounded-circle mb-3">
+                    <h5>Julianne Lansangan</h5>
+                    <p>Graphic Designer, Content Specialist</p>
+                </div>
+                <div class="col team-member hover-scale">
+                    <img src="https://via.placeholder.com/150" alt="Lebron Duculan" class="rounded-circle mb-3">
+                    <h5>Lebron Duculan</h5>
+                    <p>Content Specialist</p>
+                </div>
+                <div class="col team-member hover-scale">
+                    <img src="https://via.placeholder.com/150" alt="Rovic Dato" class="rounded-circle mb-3">
+                    <h5>Rovic Dato</h5>
+                    <p>Front-end Developer, UI/UX Developer</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="container-fluid bg-dark text-light py-4 text-center">
-        <p class="text-accent">© 2025 RecycLink. All rights reserved.</p>
+        <p>© 2025 RecycLink. All rights reserved.</p>
     </footer>
 
     <!-- Back to Top -->
@@ -289,35 +460,51 @@
     <script src="lib/lightbox/js/lightbox.min.js"></script>
     <script src="js/main.js"></script>
 
-    <!-- Navbar scroll effect & active highlighting -->
+    <!-- Premium navbar scroll effect -->
     <script>
     document.addEventListener("scroll", function () {
         const nav = document.querySelector(".navbar");
-        if (window.scrollY > 30) nav.classList.add("scrolled", "shadow-lg");
-        else nav.classList.remove("scrolled", "shadow-lg");
-    });
-    document.addEventListener("DOMContentLoaded", function () {
-        const sections = document.querySelectorAll("section[id]");
-        const navLinks = document.querySelectorAll(".navbar .nav-link");
-        function highlightNav() {
-            let scrollY = window.pageYOffset;
-            sections.forEach(section => {
-                const sectionHeight = section.offsetHeight;
-                const sectionTop = section.offsetTop - 100;
-                const sectionId = section.getAttribute("id");
-                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-                    navLinks.forEach(link => link.classList.remove("active"));
-                    document.querySelector(`.navbar .nav-link[href="#${sectionId}"]`).classList.add("active");
-                }
-            });
-            if (scrollY < sections[0].offsetTop) {
-                navLinks.forEach(link => link.classList.remove("active"));
-                document.querySelector('.navbar .nav-link[href="index.html"]').classList.add("active");
-            }
+        if (window.scrollY > 30) {
+            nav.classList.add("scrolled", "shadow-lg");
+        } else {
+            nav.classList.remove("scrolled", "shadow-lg");
         }
-        window.addEventListener("scroll", highlightNav);
-        highlightNav();
     });
     </script>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll(".navbar .nav-link");
+
+    function highlightNav() {
+        let scrollY = window.pageYOffset;
+
+        sections.forEach(section => {
+            const sectionHeight = section.offsetHeight;
+            const sectionTop = section.offsetTop - 100; // offset for navbar height
+            const sectionId = section.getAttribute("id");
+
+            if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                navLinks.forEach(link => {
+                    link.classList.remove("active");
+                    if (link.getAttribute("href") === `#${sectionId}`) {
+                        link.classList.add("active");
+                    }
+                });
+            }
+        });
+
+        // Highlight home only if at top of page
+        if (scrollY < sections[0].offsetTop) {
+            navLinks.forEach(link => link.classList.remove("active"));
+            document.querySelector('.navbar .nav-link[href="index.html"]').classList.add("active");
+        }
+    }
+
+    window.addEventListener("scroll", highlightNav);
+    highlightNav(); // call once on load
+});
+</script>
+
 </body>
 </html>
