@@ -4,25 +4,14 @@
 :root {
     --primary: #2E7D32;   /* dark green */
     --secondary: #4CAF50; /* medium green */
-    --light: #E8F5E9;     /* light green background */
+    --light: #E8F5E9;     /* light green */
     --dark: #1B5E20;      /* deep green */
-    --accent: #81C784;    /* lighter green accent */
-    --hover: #66BB6A;     /* hover effects */
+    --accent: #66BB6A;    /* light-medium green for accents */
 }
 
-/********** Navbar & Topbar **********/
-.container-fluid.bg-dark {
-    background-color: var(--dark) !important;
-}
-.container-fluid.bg-dark a.btn-link {
-    color: var(--light);
-}
-.container-fluid.bg-dark a.btn-link:hover {
-    color: var(--accent);
-}
-
+/********** Navbar **********/
 .navbar {
-    background: rgba(255,255,255,0.95);
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     padding: 0.8rem 1rem !important;
@@ -41,6 +30,7 @@
     transition: color 0.3s ease, transform 0.3s ease, font-weight 0.3s ease;
     color: #2b4737 !important;
     position: relative;
+    font-family: 'Lato', sans-serif;
 }
 .navbar .nav-link.active {
     font-weight: 700 !important;
@@ -59,11 +49,15 @@
     border-radius: 2px;
 }
 .navbar .nav-link:hover {
-    color: var(--secondary) !important;
+    color: var(--primary) !important;
     transform: translateY(-2px);
 }
-.navbar .nav-link:hover::after { width: 35%; }
-.navbar .nav-link.active::after { width: 40%; }
+.navbar .nav-link:hover::after {
+    width: 35%;
+}
+.navbar .nav-link.active::after {
+    width: 40%;
+}
 .navbar-nav {
     background: rgba(255,255,255,0.96);
     backdrop-filter: blur(10px);
@@ -75,37 +69,23 @@
     border: none;
     transition: transform 0.3s ease;
 }
-.navbar-toggler:focus { outline: none; box-shadow: none; }
-.navbar-toggler:hover { transform: rotate(90deg); }
-.navbar-toggler-icon { filter: brightness(0.3); }
-
-/********** Hero Section **********/
-.hero-section {
-    background: linear-gradient(rgba(46,125,50,0.7), rgba(46,125,50,0.7)), url('../img/home-animation.gif') center/cover no-repeat;
-    padding: 5rem 0;
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
 }
-.hero-section h1, .hero-section p { text-align: center; color: var(--light); font-family: 'Jost', sans-serif; }
-.hero-section .btn {
-    min-width: 180px;
-    transition: all 0.3s ease;
-    background-color: var(--accent);
+.navbar-toggler:hover {
+    transform: rotate(90deg);
+}
+.navbar-toggler-icon {
+    filter: brightness(0.3);
+}
+
+/********** General Enhancements **********/
+h4 { 
+    text-align: center; 
     color: var(--dark);
-}
-.hero-section .btn:hover {
-    transform: translateY(-3px) scale(1.05);
-    background-color: var(--hover);
-    color: #fff;
-}
-
-/********** General Section Titles & Headings **********/
-h2.display-5, h4 {
-    color: var(--primary);
-    text-align: center;
     font-family: 'Jost', sans-serif;
 }
-h4 { margin-bottom: 0.75rem; }
-
-/********** Core Values **********/
 .core-values {
     text-align: center;
     margin-bottom: 2rem;
@@ -133,37 +113,27 @@ h4 { margin-bottom: 0.75rem; }
     color: var(--primary);
 }
 
-/********** Cards / Boxes (About, Features, How It Works, Recyclers) **********/
-#about .row.g-4, #feature-highlights .row.g-4, #how-it-works .row.g-4, #for-recyclers .row.g-3 {
+/********** Mission & Vision Boxes **********/
+#about .row.g-4 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-#about .col-md-6, #feature-highlights .col-md-4, #for-recyclers .col-md-4 {
-    margin-bottom: 2rem;
-}
-#feature-highlights .p-4, #how-it-works .p-4, #for-recyclers .p-3, #about .p-4 {
-    border: 1px solid var(--accent);
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(46,125,50,0.1);
-    transition: all 0.3s ease;
-    background-color: #fff;
     text-align: center;
 }
-#feature-highlights .p-4:hover, #how-it-works .p-4:hover, #for-recyclers .p-3:hover, #about .p-4:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(46,125,50,0.2);
-    background-color: rgba(76,175,80,0.08);
+#about .col-md-6 {
+    margin-bottom: 2rem;
+}
+#about h4 { 
+    margin-bottom: 0.75rem; 
 }
 
-/********** Buttons **********/
-.btn-primary { background-color: var(--primary); border-color: var(--primary); transition: all 0.3s ease; }
-.btn-primary:hover { background-color: var(--dark); border-color: var(--dark); color: var(--light); }
-.btn-outline-primary { color: var(--primary); border-color: var(--primary); transition: all 0.3s ease; }
-.btn-outline-primary:hover { background-color: var(--primary); color: var(--light); }
-
-/********** Team Section **********/
-.team-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; }
+/********** Team Section Enhancements **********/
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
 .team-member {
     text-align: center;
     width: 220px;
@@ -180,34 +150,108 @@ h4 { margin-bottom: 0.75rem; }
 }
 .team-member:hover img {
     transform: scale(1.05);
-    box-shadow: 0 12px 25px rgba(46,125,50,0.25);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
-.team-member h5 { color: var(--dark); font-weight: 600; margin-bottom: 0.25rem; }
-.team-member p { color: var(--secondary); font-size: 0.95rem; }
+.team-member h5 {
+    color: var(--dark);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    font-family: 'Jost', sans-serif;
+}
+.team-member p {
+    color: var(--secondary);
+    font-size: 0.95rem;
+}
 
-/********** FAQ Section **********/
-#faqs { padding: 5rem 0; background-color: var(--light); color: var(--dark); font-family: 'Lato', sans-serif; }
-#faqs h2 { color: var(--primary); margin-bottom: 2rem; }
-.faq-search { max-width: 500px; margin: 0 auto 2rem auto; padding-left: 3rem; border: 2px solid var(--primary); border-radius: 50px; box-shadow: 0 4px 10px rgba(46,125,50,0.2); transition: all 0.3s ease; }
-.faq-search:focus { outline: none; box-shadow: 0 4px 15px rgba(46,125,50,0.4); border-color: var(--dark); }
-.accordion-button:hover { background-color: rgba(46,125,50,0.1); }
-.accordion-button:not(.collapsed) { background-color: rgba(46,125,50,0.15); color: var(--dark); }
-.faq-item-header:hover { background-color: var(--secondary); color: #fff; }
+/********** Buttons Colors **********/
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: var(--dark);
+    border-color: var(--dark);
+    color: var(--light);
+}
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+    transition: all 0.3s ease;
+}
+.btn-outline-primary:hover {
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+/********** Hero Section **********/
+.hero-section {
+    background: linear-gradient(rgba(46,125,50,0.8), rgba(46,125,50,0.8)), url('../img/home-animation.gif') center/cover no-repeat;
+    padding: 5rem 0;
+}
+.hero-section h1, .hero-section p {
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+}
+.hero-section .btn {
+    min-width: 180px;
+    transition: all 0.3s ease;
+}
+.hero-section .btn:hover {
+    transform: translateY(-3px) scale(1.05);
+}
+
+/********** Section Titles - Green Shades **********/
+#feature-highlights h2,
+#how-it-works h2,
+#for-recyclers h2,
+#faqs h2 {
+    color: var(--primary);
+}
+#how-it-works .fa-3x,
+#how-it-works h4,
+#for-recyclers .btn {
+    color: var(--secondary);
+}
 
 /********** Footer **********/
-footer.container-fluid.bg-dark {
+footer {
     background-color: var(--dark);
     color: var(--light);
-    text-align: center;
 }
-footer a { color: var(--accent); }
-footer a:hover { color: var(--secondary); }
+footer p {
+    color: var(--accent);
+}
 
-/********** Back to Top **********/
+/********** Back to Top Arrow **********/
 .back-to-top {
     background-color: var(--primary) !important;
-    color: #fff !important;
+    color: var(--light) !important;
+    border: 2px solid var(--secondary);
 }
 .back-to-top:hover {
-    background-color: var(--dark) !important;
+    background-color: var(--secondary) !important;
+    color: #fff !important;
+    border-color: var(--primary);
+}
+
+/********** FAQ Section **********/
+#faqs {
+    padding: 5rem 0;
+    background-color: var(--light);
+    font-family: 'Lato', sans-serif;
+    color: var(--dark);
+}
+#faqs h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Jost', sans-serif;
+    color: var(--primary);
+}
+.accordion-button:hover {
+    background-color: rgba(46,125,50,0.1);
+}
+.accordion-button:not(.collapsed) {
+    background-color: rgba(46,125,50,0.15);
+    color: #1B5E20;
 }
