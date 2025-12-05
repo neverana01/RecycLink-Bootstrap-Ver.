@@ -59,27 +59,6 @@
 .navbar .nav-link.active::after {
     width: 40%;
 }
-.navbar-nav {
-    background: rgba(255,255,255,0.96);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 10px;
-    padding: 1rem;
-}
-.navbar-toggler {
-    border: none;
-    transition: transform 0.3s ease;
-}
-.navbar-toggler:focus {
-    outline: none;
-    box-shadow: none;
-}
-.navbar-toggler:hover {
-    transform: rotate(90deg);
-}
-.navbar-toggler-icon {
-    filter: brightness(0.3);
-}
 
 /********** General Enhancements **********/
 h4 { 
@@ -96,14 +75,13 @@ h4 {
     text-align: left;
     margin: 0 auto;
     padding-left: 1.5rem; 
-    position: relative;
 }
 .core-values ul li {
     font-size: 1rem;
     color: var(--dark);
     margin-bottom: 0.5rem;
-    position: relative;
     padding-left: 1.8rem;
+    position: relative;
 }
 .core-values ul li::before {
     content: "✔";
@@ -164,6 +142,10 @@ h4 {
     color: var(--secondary);
     font-size: 0.95rem;
 }
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(46,125,50,0.2);
+}
 
 /********** Buttons Colors **********/
 .btn-primary {
@@ -195,10 +177,6 @@ h4 {
     text-align: center;
     font-family: 'Jost', sans-serif;
 }
-.hero-section .btn {
-    min-width: 180px;
-    transition: all 0.3s ease;
-}
 .hero-section .btn:hover {
     transform: translateY(-3px) scale(1.05);
 }
@@ -211,10 +189,33 @@ h4 {
     color: var(--primary);
     font-family: 'Jost', sans-serif;
 }
-#how-it-works .fa-3x,
-#how-it-works h4,
-#for-recyclers .btn {
+
+/********** Eco-Themed Cards **********/
+#feature-highlights .border, #feature-highlights .p-4,
+#how-it-works .border, #how-it-works .p-4,
+#for-recyclers .border, #for-recyclers .p-3 {
+    background: linear-gradient(145deg, rgba(232,245,233,0.9), rgba(198,237,204,0.9));
+    border-color: var(--secondary);
+    color: var(--dark);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+}
+.hover-scale:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(46, 125, 50, 0.25);
+}
+#how-it-works i.fa-3x {
     color: var(--secondary);
+}
+
+/* For Recyclers Button Gradient */
+#for-recyclers .btn-primary {
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    border: none;
+    color: var(--light);
+}
+#for-recyclers .btn-primary:hover {
+    background: linear-gradient(90deg, var(--secondary), var(--primary));
+    box-shadow: 0 8px 20px rgba(46,125,50,0.3);
 }
 
 /********** Footer **********/
@@ -227,7 +228,7 @@ footer p {
     margin: 0;
 }
 
-/********** Back to Top Arrow **********/
+/********** Back to Top **********/
 .back-to-top {
     background-color: var(--primary) !important;
     color: var(--light) !important;
@@ -246,12 +247,6 @@ footer p {
     font-family: 'Lato', sans-serif;
     color: var(--dark);
 }
-#faqs h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-family: 'Jost', sans-serif;
-    color: var(--primary);
-}
 .accordion-button:hover {
     background-color: rgba(46,125,50,0.1);
 }
@@ -259,75 +254,6 @@ footer p {
     background-color: rgba(46,125,50,0.15);
     color: var(--dark);
 }
-
-/********** Eco-Themed Section Colors **********/
-
-/* Feature Highlights Section */
-#feature-highlights h2,
-#feature-highlights h4,
-#feature-highlights p {
-    color: var(--dark); /* dark green text like About & FAQs */
-}
-#feature-highlights .border {
-    border-color: var(--secondary);
-}
-#feature-highlights .hover-scale:hover {
-    box-shadow: 0 10px 25px rgba(46, 125, 50, 0.2);
-}
-
-/* How It Works Section */
-#how-it-works h2,
-#how-it-works h4,
-#how-it-works p {
-    color: var(--dark); /* eco green text */
-}
-#how-it-works i.fa-3x {
-    color: var(--secondary); /* icons in medium green */
-}
-#how-it-works .border {
-    border-color: var(--secondary);
-}
-#how-it-works .hover-scale:hover {
-    box-shadow: 0 10px 25px rgba(46, 125, 50, 0.2);
-}
-
-/* For Recyclers Section */
-#for-recyclers h2,
-#for-recyclers p {
-    color: var(--dark);
-}
-#for-recyclers .btn-primary {
-    background-color: var(--primary);
-    border-color: var(--primary);
-}
-#for-recyclers .btn-primary:hover {
-    background-color: var(--secondary);
-    border-color: var(--secondary);
-}
-#for-recyclers .border {
-    border-color: var(--secondary);
-}
-#for-recyclers .hover-scale:hover {
-    box-shadow: 0 10px 25px rgba(46, 125, 50, 0.2);
-}
-
-/* Meet Our Team Section */
-#team h3,
-#team h5,
-#team p {
-    color: var(--dark); /* same green as About & FAQs */
-}
-#team .team-member img {
-    border-color: var(--secondary);
-}
-#team .team-member:hover img {
-    box-shadow: 0 12px 30px rgba(46, 125, 50, 0.3);
-}
-#team .hover-scale:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 30px rgba(46,125,50,0.2);
-}
-
 .accordion-body {
     color: var(--dark);
     font-size: 0.95rem;
