@@ -34,17 +34,17 @@
 <body>
     <!-- Topbar -->
     <div class="container-fluid bg-dark text-light px-0 py-2">
-        <div class="row gx-0 d-none d-lg-flex">
+        <div class="row gx-0 d-none d-lg-flex align-items-center">
             <div class="col-lg-7 px-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center me-4">
+                <div class="d-inline-flex align-items-center me-4">
                     <span class="fa fa-phone-alt me-2"></span>+012 345 6789
                 </div>
-                <div class="h-100 d-inline-flex align-items-center">
+                <div class="d-inline-flex align-items-center">
                     <span class="far fa-envelope me-2"></span>info@recyclink.com
                 </div>
             </div>
             <div class="col-lg-5 px-5 text-end">
-                <div class="h-100 d-inline-flex align-items-center mx-n2">
+                <div class="d-inline-flex align-items-center mx-n2">
                     <span>Follow Us:</span>
                     <a class="btn btn-link text-light" href="#"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-link text-light" href="#"><i class="fab fa-twitter"></i></a>
@@ -59,7 +59,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <img src="img/logo-placeholder.png" alt="RecycLink Logo" class="logo-img" data-placeholder="LOGO IMAGE HERE">
-            <h3 class="m-0">RecycLink</h3>
+            <h3 class="m-0 text-success">RecycLink</h3>
         </a>
         <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -75,16 +75,16 @@
                 <a href="#faqs" class="nav-item nav-link">FAQs</a>
                 <a href="#download" class="nav-item nav-link">Download</a>
             </div>
-            <a href="#download" class="btn btn-primary py-3 px-lg-4 rounded-0 d-none d-lg-block">Download App<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="#download" class="btn btn-success py-3 px-lg-4 rounded-0 d-none d-lg-block">Download App<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
 
-    <!-- Home / Hero Section -->
-    <section class="container-fluid p-0 hero-section bg-primary text-white text-center position-relative">
+    <!-- Hero Section -->
+    <section class="container-fluid p-0 hero-section text-white text-center position-relative" style="background: linear-gradient(rgba(46,125,50,0.8), rgba(46,125,50,0.8)), url('img/home-animation.gif') center/cover no-repeat;">
         <div class="container py-5">
             <h1 class="display-1 fw-bold mb-3">RecycLink</h1>
-            <p class="fs-4 mb-4">Make recycling rewarding—literally.<br>Effortlessly turn your trash into cash and Eco-Rewards.</p>
-            <div class="d-flex justify-content-center gap-3">
+            <p class="fs-4 mb-4">Make recycling rewarding—literally.<br>Turn your trash into cash and Eco-Rewards.</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
                 <a href="#download" class="btn btn-light btn-lg shadow">Download the App</a>
                 <a href="#for-recyclers" class="btn btn-outline-light btn-lg shadow">Join as Recycler</a>
             </div>
@@ -98,21 +98,21 @@
     <section id="about" class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto mb-5" style="max-width:700px;">
-                <h2 class="display-5 text-primary">About RecycLink</h2>
-                <p>FILL IN</p>
+                <h2 class="display-5 text-success">About RecycLink</h2>
+                <p>RecycLink is a digital platform connecting households and businesses to verified recyclers, turning waste into cash and Eco-Rewards while promoting sustainability.</p>
             </div>
 
             <div class="row g-4 mb-4">
                 <div class="col-md-6">
                     <div class="p-4 border rounded shadow-sm h-100 text-center">
                         <h4 class="mb-3">Mission</h4>
-                        <p>FILL IN</p>
+                        <p>Empower communities to recycle efficiently and responsibly, creating value from waste while protecting the environment.</p>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="p-4 border rounded shadow-sm h-100 text-center">
                         <h4 class="mb-3">Vision</h4>
-                        <p>FILL IN</p>
+                        <p>To become the leading platform that inspires sustainable living by making recycling accessible, rewarding, and transparent.</p>
                     </div>
                 </div>
             </div>
@@ -252,57 +252,56 @@
         </div>
     </section>
 
-    <!-- FAQs Section -->
+<!-- FAQs Section -->
 <section id="faqs" class="container-xxl py-5">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="display-5 text-primary">Frequently Asked Questions</h2>
+            <h2 class="display-5 text-success">Frequently Asked Questions</h2>
             <p>Everything you need to know about RecycLink, for both households and recyclers.</p>
         </div>
         
         <!-- FAQ Search Bar -->
         <div class="mb-4">
-            <input type="text" id="faqSearch" class="form-control form-control-lg" placeholder="Search FAQs...">
+            <input type="text" id="faqSearch" class="form-control form-control-lg border-success shadow-sm" placeholder="Search FAQs...">
         </div>
-        
 
         <!-- For Households / App Users -->
         <div class="mb-4">
-            <h4 class="mb-3">For Households / App Users</h4>
+            <h4 class="mb-3 text-success">For Households / App Users</h4>
             <div class="accordion" id="householdFaqs">
-                <div class="accordion-item">
+                <div class="accordion-item border-success rounded mb-2 shadow-sm">
                     <h2 class="accordion-header" id="q1">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="a1">
+                        <button class="accordion-button collapsed text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="a1">
                             Q1: How do I start using RecycLink?
                         </button>
                     </h2>
                     <div id="a1" class="accordion-collapse collapse" aria-labelledby="q1" data-bs-parent="#householdFaqs">
-                        <div class="accordion-body">
-                            A: Download the app, create an account, and list your recyclable items. The system will match you with verified buyers nearby.
+                        <div class="accordion-body text-dark">
+                            Download the app, create an account, and list your recyclable items. The system will match you with verified buyers nearby.
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item border-success rounded mb-2 shadow-sm">
                     <h2 class="accordion-header" id="q2">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="a2">
+                        <button class="accordion-button collapsed text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="a2">
                             Q2: What kind of materials can I sell?
                         </button>
                     </h2>
                     <div id="a2" class="accordion-collapse collapse" aria-labelledby="q2" data-bs-parent="#householdFaqs">
-                        <div class="accordion-body">
-                            A: Plastics, paper, metals, glass, used electronics, and more. The app automatically categorizes them for you.
+                        <div class="accordion-body text-dark">
+                            Plastics, paper, metals, glass, used electronics, and more. The app automatically categorizes them for you.
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item border-success rounded mb-2 shadow-sm">
                     <h2 class="accordion-header" id="q3">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="a3">
+                        <button class="accordion-button collapsed text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="a3">
                             Q3: How do I get paid?
                         </button>
                     </h2>
                     <div id="a3" class="accordion-collapse collapse" aria-labelledby="q3" data-bs-parent="#householdFaqs">
-                        <div class="accordion-body">
-                            A: You can receive payment through GCash, Maya, or bank transfer—or earn EcoPoints redeemable for vouchers and rewards.
+                        <div class="accordion-body text-dark">
+                            You can receive payment through GCash, Maya, or bank transfer—or earn EcoPoints redeemable for vouchers and rewards.
                         </div>
                     </div>
                 </div>
@@ -311,29 +310,29 @@
 
         <!-- For Recyclers / Junk Shops -->
         <div class="mb-4">
-            <h4 class="mb-3">For Recyclers / Junk Shops</h4>
+            <h4 class="mb-3 text-success">For Recyclers / Junk Shops</h4>
             <div class="accordion" id="recyclerFaqs">
-                <div class="accordion-item">
+                <div class="accordion-item border-success rounded mb-2 shadow-sm">
                     <h2 class="accordion-header" id="q4">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="a4">
+                        <button class="accordion-button collapsed text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="a4">
                             Q4: How can I register as a recycler or buyer?
                         </button>
                     </h2>
                     <div id="a4" class="accordion-collapse collapse" aria-labelledby="q4" data-bs-parent="#recyclerFaqs">
-                        <div class="accordion-body">
-                            A: Go to “Join as Recycler” on the website or app, submit your business details, and get verified by our team.
+                        <div class="accordion-body text-dark">
+                            Go to “Join as Recycler” on the website or app, submit your business details, and get verified by our team.
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item border-success rounded mb-2 shadow-sm">
                     <h2 class="accordion-header" id="q5">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="a5">
+                        <button class="accordion-button collapsed text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="a5">
                             Q5: How does pricing work?
                         </button>
                     </h2>
                     <div id="a5" class="accordion-collapse collapse" aria-labelledby="q5" data-bs-parent="#recyclerFaqs">
-                        <div class="accordion-body">
-                            A: Buyers set their own rates, visible to all users. A recommended “market average” guide helps ensure fair trade.
+                        <div class="accordion-body text-dark">
+                            Buyers set their own rates, visible to all users. A recommended “market average” guide helps ensure fair trade.
                         </div>
                     </div>
                 </div>
@@ -342,29 +341,29 @@
 
         <!-- Trust & Safety -->
         <div class="mb-4">
-            <h4 class="mb-3">Trust & Safety</h4>
+            <h4 class="mb-3 text-success">Trust & Safety</h4>
             <div class="accordion" id="trustFaqs">
-                <div class="accordion-item">
+                <div class="accordion-item border-success rounded mb-2 shadow-sm">
                     <h2 class="accordion-header" id="q6">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="a6">
+                        <button class="accordion-button collapsed text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="a6">
                             Q6: Are the recyclers verified? How do you prevent scams?
                         </button>
                     </h2>
                     <div id="a6" class="accordion-collapse collapse" aria-labelledby="q6" data-bs-parent="#trustFaqs">
-                        <div class="accordion-body">
-                            A: Yes. We require valid IDs or business licenses for verification. Verified profiles display Trust Badges for assurance.
+                        <div class="accordion-body text-dark">
+                            Yes. We require valid IDs or business licenses for verification. Verified profiles display Trust Badges for assurance.
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item border-success rounded mb-2 shadow-sm">
                     <h2 class="accordion-header" id="q7">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="a7">
+                        <button class="accordion-button collapsed text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="a7">
                             Q7: How is my personal data protected?
                         </button>
                     </h2>
                     <div id="a7" class="accordion-collapse collapse" aria-labelledby="q7" data-bs-parent="#trustFaqs">
-                        <div class="accordion-body">
-                            A: We strictly comply with data privacy laws and use data anonymization to safeguard all user information.
+                        <div class="accordion-body text-dark">
+                            We strictly comply with data privacy laws and use data anonymization to safeguard all user information.
                         </div>
                     </div>
                 </div>
@@ -373,29 +372,29 @@
 
         <!-- Solutions & Support -->
         <div class="mb-4">
-            <h4 class="mb-3">Solutions and Support</h4>
+            <h4 class="mb-3 text-success">Solutions and Support</h4>
             <div class="accordion" id="supportFaqs">
-                <div class="accordion-item">
+                <div class="accordion-item border-success rounded mb-2 shadow-sm">
                     <h2 class="accordion-header" id="q8">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a8" aria-expanded="false" aria-controls="a8">
+                        <button class="accordion-button collapsed text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#a8" aria-expanded="false" aria-controls="a8">
                             Q8: What should I do if I encounter a problem?
                         </button>
                     </h2>
                     <div id="a8" class="accordion-collapse collapse" aria-labelledby="q8" data-bs-parent="#supportFaqs">
-                        <div class="accordion-body">
-                            A: Contact our support team directly through the app or email support@recyclink.app for quick assistance.
+                        <div class="accordion-body text-dark">
+                            Contact our support team directly through the app or email support@recyclink.app for quick assistance.
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item border-success rounded mb-2 shadow-sm">
                     <h2 class="accordion-header" id="q9">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a9" aria-expanded="false" aria-controls="a9">
+                        <button class="accordion-button collapsed text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#a9" aria-expanded="false" aria-controls="a9">
                             Q9: How are pickup issues and delays managed?
                         </button>
                     </h2>
                     <div id="a9" class="accordion-collapse collapse" aria-labelledby="q9" data-bs-parent="#supportFaqs">
-                        <div class="accordion-body">
-                            A: Route tracking, notifications, and verified logistics partners ensure reliable scheduling and quick issue resolution.
+                        <div class="accordion-body text-dark">
+                            Route tracking, notifications, and verified logistics partners ensure reliable scheduling and quick issue resolution.
                         </div>
                     </div>
                 </div>
