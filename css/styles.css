@@ -175,7 +175,7 @@ h4 {
 
 /********** Hero Section **********/
 .hero-section {
-    background: linear-gradient(rgba(46,125,50,0.85), rgba(46,125,50,0.85)), url('../img/home-animation.gif') center/cover no-repeat;
+    background: linear-gradient(rgba(46,125,50,0.85), rgba(46,125,50,0.85)), url('../img/hero.png') center/cover no-repeat;
     padding: 5rem 0;
 }
 .hero-section h1, .hero-section p {
@@ -283,3 +283,15 @@ footer p {
     transform: translateY(-2px) scale(1.03);
     box-shadow: 0 8px 20px rgba(46,125,50,0.3);
 }
+
+/* Override Bootstrap blue */
+.text-primary,
+.btn-primary,
+.bg-primary,
+.border-primary,
+.text-primary i,
+i.text-primary {
+    color: var(--primary) !important;
+    fill: var(--primary) !important;
+}
+
