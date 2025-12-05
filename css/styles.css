@@ -258,3 +258,18 @@ footer p {
     color: var(--dark);
     font-size: 0.95rem;
 }
+
+/* Register as Recycler Button - Green Eco Theme */
+#for-recyclers .btn-primary {
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    color: var(--light);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+#for-recyclers .btn-primary:hover {
+    background: linear-gradient(90deg, var(--secondary), var(--primary));
+    color: var(--light);
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(46,125,50,0.3);
+}
